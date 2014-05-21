@@ -1,1 +1,11 @@
-baseurl: /stannis.github.io
+author :
+
+name : Name Lastname
+
+email : blah@email.test
+
+github : username
+
+twitter : username
+
+feedburner : feedname
