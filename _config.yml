@@ -11,3 +11,5 @@ github : username
 twitter : username
 
 feedburner : feedname
+
+markdown: rdiscount
