@@ -1,0 +1,64 @@
+<div class="page-header">
+  <h1>
+    {{ page.title }}
+    {% if page.tagline %}
+      <small>{{ page.tagline }}</small>
+    {% endif %}
+  </h1>
+</div>
+
+<div class="row page-content">
+  <div class="span8 post-content">
+    {{ content }}
+    <hr>
+    <div class="pagination btn-group">
+      {% if page.previous %}
+        <a class="btn prev" href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; 上一篇</a>
+      {% else %}
+        <a class="btn disabled prev">&larr; 上一篇</a>
+      {% endif %}
+        <a class="btn" href="{{ BASE_PATH }}{{ site.JB.archive_path }}">文章目录</a>
+      {% if page.next %}
+        <a class="btn next" href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">下一篇 &rarr;</a>
+      {% else %}
+        <a class="btn next disabled">下一篇 &rarr;</a>
+      {% endif %}
+    </div>
+    <hr>
+    {% include JB/comments %}
+  </div>
+
+  <div class="span4 post-sidebar">
+    <section class="author-sec">
+      <h3>作者</h3>
+      <div class="author"><span>{{ page.author }}</span></div>
+    </section>
+    <section class="pulish-date-sec">
+      <h3>发布于</h3>
+      <div class="date"><span>{{ page.date | date_to_long_string }}</span></div>
+    </section>
+    {% unless page.categories == empty %}
+      <section class="categories-sec">
+        <h3>分类</h3>
+        <ul class="category_box">
+          {% for category in page.categories %}
+            <li>
+              <a href="/categories.html#{{ category }}-ref" target="_blank">
+                <span>{{ category }}</span>
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </section>
+    {% endunless %}
+    {% unless page.tags == empty %}
+      <section class="tags-sec">
+        <h3>标签</h3>
+        <ul class="tag_box">
+          {% assign tags_list = page.tags %}
+          {% include JB/tags_list %}
+        </ul>
+      </section>
+    {% endunless %}
+  </div>
+</div>
