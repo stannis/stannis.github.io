@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 35, ../_sass/_base.scss */
 a {
-  color: #228b22;
+  color: #32cd32;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
@@ -484,10 +484,11 @@ div.sidebar section img.icon {
 
 /* more link */
 .more-link:hover {
-  color: #228b22;
+  color: #32cd32;
 }
 
 /* sidebar comments */
+
 .disqus-comment-sec #dsq-combo-widget.grey #dsq-combo-content .dsq-combo-box {
   background: none;
 }
@@ -624,3 +625,80 @@ code {
   margin-left: 3px;
   word-break: break-all;
 }
+/*duoshuo style */
+#ds-thread #ds-reset .ds-powered-by {
+display: none !important;
+}
+#ds-thread #ds-reset .ds-meta {
+display: none !important;
+}
+#ds-thread #ds-reset .ds-comments {
+margin: 0 0 !important;
+}
+#ds-thread #ds-reset .ds-replybox {
+margin: 0 0 !important;
+}
+#ds-thread #ds-reset .ds-post-toolbar span {
+display:none !important;
+}
+/*#ds-thread #ds-reset #ds-bubble {
+display:none !important;
+}*/
+#ds-thread #ds-reset .ds-avatar {
+  background:none !important;
+}
+#ds-thread #ds-reset .ds-avatar img {
+ -webkit-border-radius: 25px !important;
+  -moz-border-radius: 25px !important;
+  border-radius: 25px !important;
+  -webkit-transition: -webkit-transform 0.4s ease-out;
+  -moz-transition: -moz-transform 0.4s ease-out;
+  transition: transform 0.4s ease-out;
+}
+#ds-thread #ds-reset .ds-avatar img:hover {
+  -webkit-transform: rotateZ(360deg);
+  -moz-transform: rotateZ(360deg);
+  transform: rotateZ(360deg);
+}
+/*
+#ds-reset .ds-avatar {
+box-shadow: 0 0px 0px rgba(255,255,255,0.75) !important;
+background: none !important;
+}
+
+#ds-reset .ds-avatar img {
+  width: 54px !important;
+  height: 54px !important;
+  -webkit-border-radius: 27px !important;
+  -moz-border-radius: 27px !important;
+  border-radius: 27px !important;
+  -webkit-transition: -webkit-transform 0.4s ease-out;
+  -moz-transition: -moz-transform 0.4s ease-out;
+  transition: transform 0.4s ease-out;
+}
+#ds-reset .ds-avatar img:hover {
+  -webkit-transform: rotateZ(360deg);
+  -moz-transform: rotateZ(360deg);
+  transform: rotateZ(360deg);
+}
+#ds-reset{
+color: #eee !important;
+}
+#ds-thread #ds-reset a {
+color: #999 !important;
+}
+#ds-reset .ds-comment-body a {
+color: #22b822 !important;
+}
+#ds-thread #ds-reset ul.ds-comments-tabs .ds-highlight {
+color: #22b822 !important;
+}
+#ds-thread #ds-reset .ds-sort a.ds-current, #ds-thread #ds-reset .ds-sort a:active {
+color: #22b822 !important;
+}
+#ds-thread #ds-reset li.ds-tab a {
+text-shadow: 0 0px 0 #000 !important;
+}
+#ds-thread #ds-reset .ds-post-self {
+border-top: 1px solid rgba(64,64,64,0.7) !important;
+*/
