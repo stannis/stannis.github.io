@@ -17,7 +17,7 @@
       {% else %}
         <a class="btn disabled prev">&larr; 上一篇</a>
       {% endif %}
-        <a class="btn" href="{{ BASE_PATH }}{{ site.JB.archive_path }}">文章目录</a>
+  <!--  <a class="btn" href="{{ BASE_PATH }}{{ site.JB.archive_path }}">文章目录</a>-->
       {% if page.next %}
         <a class="btn next" href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">下一篇 &rarr;</a>
       {% else %}
@@ -53,7 +53,7 @@
     {% endunless %}
     {% unless page.tags == empty %}
       <section class="tags-sec">
-        <h3>标签</h3>
+        <h3>标签云</h3>
         <ul class="tag_box">
           {% assign tags_list = page.tags %}
           {% include JB/tags_list %}
