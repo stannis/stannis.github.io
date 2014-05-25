@@ -440,12 +440,19 @@ div.sidebar section img.icon {
   border-radius: 12px;
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
+  -webkit-transition: -webkit-transform 0.4s ease-out;
+  -moz-transition: -moz-transform 0.4s ease-out;
+  transition: transform 0.4s ease-out;
 }
 
 .social-icon:hover {
   box-shadow: #fff 0 0 8px;
   -webkit-box-shadow: #fff 0 0 8px;
   -moz-box-shadow: #fff 0 0 8px;
+
+  -webkit-transform: rotateZ(360deg);
+  -moz-transform: rotateZ(360deg);
+  transform: rotateZ(360deg);
 }
 
 /* sidebar widget */
@@ -625,6 +632,7 @@ code {
   margin-left: 3px;
   word-break: break-all;
 }
+
 /*duoshuo style */
 #ds-thread #ds-reset .ds-powered-by {
 display: none !important;
@@ -641,9 +649,9 @@ margin: 0 0 !important;
 #ds-thread #ds-reset .ds-post-toolbar span {
 display:none !important;
 }
-/*#ds-thread #ds-reset #ds-bubble {
+#ds-thread #ds-reset #ds-bubble {
 display:none !important;
-}*/
+}
 #ds-thread #ds-reset .ds-avatar {
   background:none !important;
 }
@@ -659,6 +667,12 @@ display:none !important;
   -webkit-transform: rotateZ(360deg);
   -moz-transform: rotateZ(360deg);
   transform: rotateZ(360deg);
+}
+#ds-thread #ds-reset .ds-comment-body p {
+color:#bbb !important;
+}
+#ds-thread #ds-reset .ds-login-buttons p {
+color:#bbb !important;
 }
 /*
 #ds-reset .ds-avatar {
