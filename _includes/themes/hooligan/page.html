@@ -29,7 +29,7 @@
   <div class="span4 sidebar">
 
     <div class="widget copyright-sec">
-      <h3 class="widget-title">版权声明</h3>
+      <h3 class="widget-title"><i class="icon-fixed-width icon-warning-sign" style="width:18px;"></i>版权声明</h3>
       <div class="widget-content">
         <p>
           <center>
@@ -44,25 +44,20 @@
     </div>
     
     <div class="widget disqus-comment-sec">
-      <h3 class="widget-title">最近评论</h3><div class="widget-content">
-      <div class="ds-recent-comments" data-num-items="5" data-show-avatars="1" data-show-time="1" data-show-title="1" data-show-admin="1" data-excerpt-length="70"></div>
-<script type="text/javascript">
-var duoshuoQuery = {short_name:"{{ site.JB.comments.duoshuo.short_name }}"};
-	(function() {
-		var ds = document.createElement('script');
-		ds.type = 'text/javascript';ds.async = true;
-		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-		ds.charset = 'UTF-8';
-		(document.getElementsByTagName('head')[0] 
-		 || document.getElementsByTagName('body')[0]).appendChild(ds);
-	})();
-	</script>
+      <h3 class="widget-title" ><i class="icon-fixed-width icon-file-text" style="width:18px;"></i>最近发表</h3>
+		<div class="widget-content">
+
+<ul style="margin: 0em 0 0em 1em;">
+{% for post in site.posts limit:10 %}
+  <li style= "margin: 0.4em 0 0.4em 0em;list-style: none;"><a href="{{ post.url }}" title="查看《{{ post.title }}》">{{ post.title }}</a></li>
+{% endfor %}
+</ul>
         <!--
 		
 		<script type="text/javascript" src="http://{{ site.JB.comments.disqus.short_name }}.disqus.com/combination_widget.js?num_items=7&hide_mods=1&color=gray&default_tab=recent&excerpt_length=20"></script>
 		
 		-->
-      </div>
+		</div>
     </div>
 
   </div>
