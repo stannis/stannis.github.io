@@ -11,7 +11,7 @@ tagline: Welcome!
   </h2>
   <div class="entry-meta">
       <i class="icon-user"></i>  <span>{{ post.author }}</span> &nbsp;
-      <i class="icon-calendar"></i>  <span>{{ post.date | date:"%Y-%m-%d" }}</span> &nbsp;
+      <i class="icon-calendar"></i>  <span style="font-size:10pt;">{{ post.date | date:"%Y-%m-%d" }}</span> &nbsp;
       {% unless post.categories == empty %}
         <br />
         <i class="icon-bookmark"></i>
@@ -75,5 +75,6 @@ tagline: Welcome!
       <li class="single" style="color:#ccc;">后翻</li>
     {% endif %}
   </ul>
+
 </div>
 

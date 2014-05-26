@@ -35,7 +35,7 @@
     </section>
     <section class="pulish-date-sec">
       <h3>发布于</h3>
-      <div class="date"><span>{{ page.date | date_to_long_string }}</span></div>
+      <div class="date"><span style="font-size:12px;">{{ page.date | date_to_long_string }}</span></div>
     </section>
     {% unless page.categories == empty %}
       <section class="categories-sec">
@@ -43,7 +43,7 @@
         <ul class="category_box">
           {% for category in page.categories %}
             <li>
-              <a href="/categories.html#{{ category }}-ref" target="_blank">
+              <a href="/categories.html#{{ category }}-ref" target="_self">
                 <span>{{ category }}</span>
               </a>
             </li>
