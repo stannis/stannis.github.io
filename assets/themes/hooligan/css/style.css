@@ -147,9 +147,8 @@ hr {
 }
 /* line 134, ../_sass/_base.scss */
 .content p {
-  padding-bottom: 15px;
   line-height: 25px;
-  margin: 0;
+  margin: 5px 0;
 }
 
 /* Page header tweaks */
@@ -198,7 +197,7 @@ div.pagination li a {
 /* line 176, ../_sass/_base.scss */
 a.btn, a.btn.disabled {
 background: rgba(255, 255, 255, 0.08);
-
+margin-top: 5px;
 color: #fff;
 border-radius: 3px;
 text-decoration: none;
@@ -414,7 +413,7 @@ div.sidebar section img.icon {
 .post-wrapper {
   border-radius: 10px;
   padding: 20px;
-  margin: 0 10px;
+  margin: 0 10px 20px 10px;
   box-shadow: 0 3px 10px #000;
 }
 
@@ -431,6 +430,7 @@ div.sidebar section img.icon {
 
 .entry {
   font-size: 12pt;
+  margin-top:10px;
 }
 
 .entry-meta {
