@@ -1,6 +1,6 @@
-# My Own Blog
+# My Blog
 
-[pinkyjie.com](http://pinkyjie.com)
+[stannis.github.io](http://stannis.github.io)
 
 
 Built with [Jekyll-Bootstrap](http://jekyllbootstrap.com/)

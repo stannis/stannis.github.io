@@ -197,17 +197,20 @@ div.pagination li a {
 /* Buttons */
 /* line 176, ../_sass/_base.scss */
 a.btn, a.btn.disabled {
-background: rgba(255, 255, 255, 0.03);
-color: white;
+background: rgba(255, 255, 255, 0.08);
+
+color: #fff;
 border-radius: 3px;
 text-decoration: none;
+box-shadow: inset 0 3px 0px -2px rgba(255, 255, 255, .3);
 -moz-box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, rgba(0, 0, 0, 0.8) 0 1px 7px 0px inset;
 -webkit-box-shadow: rgba(0, 0, 0, 0.8) 0 1px 0, rgba(255, 255, 255, 0.5) 0 1px 1px 0px inset;
 -o-box-shadow: rgba(255, 255, 255, 0.1) 0 1px 0, rgba(0, 0, 0, 0.8) 0 1px 7px 0px inset;
   }
+ 
 /* line 187, ../_sass/_base.scss */
 a.btn:hover, a.btn.disabled:hover {
-background: rgba(255, 255, 255, 0.1)
+background: rgba(255, 255, 255, 0.2);
 }
 /* line 190, ../_sass/_base.scss */
 a.btn.disabled, a.btn.disabled.disabled {
@@ -490,8 +493,10 @@ div.sidebar section img.icon {
 }
 
 /* more link */
+
 .more-link:hover {
   color: #fff;
+
 }
 
 /* sidebar comments */
@@ -634,6 +639,7 @@ code {
 }
 
 /*duoshuo style */
+
 #ds-thread #ds-reset .ds-powered-by {
 display: none !important;
 }
@@ -687,8 +693,9 @@ border-bottom: 3px solid #088A29 !important;
 border-bottom: 3px solid #075F1D !important;
 }
 #ds-thread #ds-reset .ds-login-buttons .ds-more-services {
-color: #088A29 !important;
+display:none !important;
 }
+
 /*
 #ds-reset .ds-avatar {
 box-shadow: 0 0px 0px rgba(255,255,255,0.75) !important;
