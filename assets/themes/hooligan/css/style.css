@@ -126,7 +126,7 @@ hr {
 }
 /* line 111, ../_sass/_base.scss */
 .content img {
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+
 }
 /* line 115, ../_sass/_base.scss */
 .content.no-header {
@@ -197,8 +197,6 @@ div.pagination li a {
 /* Buttons */
 /* line 176, ../_sass/_base.scss */
 a.btn, a.btn.disabled {
-padding: 3px 6px;
-margin: 2px;
 background: rgba(255, 255, 255, 0.03);
 color: white;
 border-radius: 3px;
@@ -687,6 +685,9 @@ border-bottom: 3px solid #088A29 !important;
 }
 #ds-thread #ds-reset li.ds-tab a.ds-current {
 border-bottom: 3px solid #075F1D !important;
+}
+#ds-thread #ds-reset .ds-login-buttons .ds-more-services {
+color: #088A29 !important;
 }
 /*
 #ds-reset .ds-avatar {
