@@ -624,7 +624,7 @@ div.sidebar section img.icon {
   .post-wrapper {
     border-radius: 0;
     padding: 0;
-    margin: 0;
+    margin: 10px 0;
     box-shadow: none;
   }
 }
