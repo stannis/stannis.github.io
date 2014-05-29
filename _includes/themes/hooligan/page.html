@@ -37,14 +37,9 @@
 
 <ul style="margin: 0 0 0 2px;">
 {% for post in site.posts limit:10 %}
-  <li style= "margin: 0.4em 0 0.4em 0em;list-style: none;"><i class="icon-fixed-width icon-file-text" style="width:18px;"></i><a href="{{ post.url }}" title="查看《{{ post.title }}》">{{ post.title }}</a></li><hr style="margin:2px 0">
+  <li style= "margin: 0.4em 0 0.4em 0em;list-style: none;"><i class="icon-fixed-width icon-file-text" style="width:18px;"></i><a href="{{ post.url }}" title="查看《{{ post.title }}》">{{ post.title }}</a></li><hr style="margin:2px 0;background: rgba(32, 32, 32, 0.5);">
 {% endfor %}
 </ul>
-        <!--
-		
-		<script type="text/javascript" src="http://{{ site.JB.comments.disqus.short_name }}.disqus.com/combination_widget.js?num_items=7&hide_mods=1&color=gray&default_tab=recent&excerpt_length=20"></script>
-		
-		-->
 		</div>
     </div>
 
