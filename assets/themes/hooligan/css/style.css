@@ -679,11 +679,6 @@ margin: 0 0 !important;
 #ds-thread #ds-reset .ds-post-toolbar span {
 display:none !important;
 }
-/*
-#ds-thread #ds-reset #ds-bubble {
-display:none !important;
-}
-*/
 #ds-thread #ds-reset #ds-bubble {
 background:rgba(26, 26, 26, 0.9) !important;
 border:1px solid #444 !important;
@@ -748,6 +743,9 @@ color:#ccc !important;
 }
 #ds-thread #ds-reset .ds-textarea-wrapper {
 margin-top:8px !important;
+}
+#ds-thread #ds-reset li.ds-post-placeholder {
+color:#777 !important;
 }
 /*
 #ds-reset .ds-avatar {
