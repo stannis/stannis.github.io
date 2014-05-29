@@ -36,7 +36,7 @@ tagline: Welcome!
 <hr />
 <div class="paginate">
   <ul>
-    <li class="single" style="color:#ccc;">当前第{{ paginator.page }}/{{ paginator.total_pages }}页</li>
+    <li class="single" style="color:#ccc;">第{{ paginator.page }}/{{ paginator.total_pages }}页</li>
     {% if paginator.previous_page %}
       {% if paginator.previous_page == 1 %}
         <li><a href="/">前翻</a></li>
