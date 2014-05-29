@@ -60,6 +60,7 @@ h1 {
 /* line 57, ../_sass/_base.scss */
 h2 {
   font-size: 30px;
+  margin-bottom:15px;
 }
 
 /* line 61, ../_sass/_base.scss */
@@ -220,7 +221,7 @@ a.btn.disabled, a.btn.disabled.disabled {
 /* line 196, ../_sass/_base.scss */
 .tag_box {
   list-style: none;
-  margin: 0;
+  margin: 5px 0;
   padding: 0;
   overflow: hidden;
 }
@@ -435,6 +436,7 @@ div.sidebar section img.icon {
 
 .entry-title {
   padding-bottom:8px;
+  margin-bottom:0px;
   border-bottom:1px solid #111;
 }
 
